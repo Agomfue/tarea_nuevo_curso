@@ -455,3 +455,88 @@ footer{
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #tarjetas {
+        flex-direction: column;
+    }
+
+    #alertas {
+        flex-direction: column;
+    }
+
+    #grupo1, #grupo2 {
+        flex-direction: column;
+    }
+
+    #tarCo {
+        flex-direction: column;
+    }
+
+    #contenidoT {
+        flex-direction: column;
+    }
+
+    #izquierda {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #derecha {
+        width: 100%;
+    }
+
+    #cuarto {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    #quinto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenidoQ {
+        flex-direction: column;
+    }
+
+    #demo {
+        width: 100%;
+    }
+
+    #sexto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenidoS {
+        flex-direction: column;
+    }
+
+    #navega {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
