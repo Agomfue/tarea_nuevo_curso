@@ -459,84 +459,59 @@ footer{
 
 /* ADAPTACIÓN A MÓVILES */
 
-@media (max-width: 700px) {
+* {
+    box-sizing: border-box;
+}
 
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
+body {
+    margin: 0;
+    width: 100%;
+}
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+#primero, #segundo, #tercero,
+#cuarto, #quinto, #sexto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 3%;
+}
 
-    #tarjetas {
-        flex-direction: column;
-    }
+#tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-    #alertas {
-        flex-direction: column;
-    }
+.tarjeta {
+    flex: 1 1 250px;
+}
 
-    #grupo1, #grupo2 {
-        flex-direction: column;
-    }
+#contenidoT, #contenidoQ, #contenidoS {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 
-    #tarCo {
-        flex-direction: column;
-    }
+#izquierda, #derecha,
+#demo, #guias,
+.formulario, #navega {
+    flex: 1 1 300px;
+    min-width: 0;
+}
 
-    #contenidoT {
-        flex-direction: column;
-    }
+#alertas, #grupo1, #grupo2, #tarCo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-    #izquierda {
-        width: 100%;
-        box-sizing: border-box;
-    }
+#verde, #amarillo, #roja {
+    flex: 1 1 180px;
+}
 
-    #derecha {
-        width: 100%;
-    }
-
-    #cuarto {
-        flex-direction: column;
-    }
-
-    .formulario {
-        width: 100%;
-    }
-
-    #quinto {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contenidoQ {
-        flex-direction: column;
-    }
-
-    #demo {
-        width: 100%;
-    }
-
-    #sexto {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contenidoS {
-        flex-direction: column;
-    }
-
-    #navega {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 15px;
-    }
+input, textarea, select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
