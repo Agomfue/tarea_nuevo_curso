@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -43,6 +47,7 @@ nav a{
 body{
     background-color: whitesmoke;
     margin: 0;
+    width: 100%;
 }
 
 /*Index*/
@@ -51,9 +56,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
     padding: 3%;
+    width: 100%;
 }
 
 .presentacion{
@@ -100,6 +106,8 @@ body{
     display: flex;
     width: 100%;
     gap: 15px;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
 }
 
 .tarjeta{
@@ -127,21 +135,23 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
     padding: 3%;
+    gap: 20px;
 }
 
 #alertas{
     display: flex;
     gap: 25px;
-
+    flex-wrap: wrap;
 }
 
 #grupo1, #grupo2 {
     display: flex;
     gap: 15px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .tarjeta h4{
@@ -162,13 +172,14 @@ body{
 #tarCo{
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 #verde, #amarillo, #roja{
     box-shadow: #000000 0px 0px 3px;
     padding: 15px;
     border-radius: 12px;
-    flex: 1;
+    flex: 1 1 180px;
 }
 
 #verde{
@@ -187,9 +198,11 @@ body{
 #tercero{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 3%;
     flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 #tercero .presentacion {
@@ -205,6 +218,7 @@ body{
     background-color: white;
     padding: 20px;
     border-radius: 15px;
+    flex: 1 1 300px;
 }
 
 #izquierda h2 {
@@ -220,10 +234,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 1 1 300px;
 }
 
 #contenidoT{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -298,8 +314,10 @@ body{
 
 #cuarto{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 3%;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 #cuarto .presentacion p{
@@ -312,6 +330,7 @@ body{
     padding: 20px;
     border-radius: 15px;
     box-sizing: border-box;
+    flex: 1 1 300px;
 }
 
 #sitio, .tico {
@@ -339,7 +358,7 @@ body{
 #quinto{
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
     padding: 3%;
 }
@@ -347,14 +366,16 @@ body{
 #contenidoQ {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 #demo {
     width: 50%;
+    flex: 1 1 300px;
 }
 
 #guias {
-    flex: 1;
+    flex: 1 1 300px;
 }
 
 #postcast {
@@ -391,9 +412,11 @@ body{
 
 /*Seguridad*/
 #sexto{
+    width: 100%;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 3%;
+    flex-wrap: wrap;
 }
 
 #sexto .presentacion {
@@ -403,6 +426,7 @@ body{
 #contenidoS {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 #sexto .formulario{
@@ -432,6 +456,7 @@ body{
     color: black;
     width: 40%;
     box-sizing: border-box;
+    flex: 1 1 300px;
 }
 
 #navega h2{
@@ -459,56 +484,17 @@ footer{
 
 /* ADAPTACIÓN A MÓVILES */
 
-* {
-    box-sizing: border-box;
-}
+/*comprueba el quinto con flex*/
 
-body {
-    margin: 0;
-    width: 100%;
-}
 
-#primero, #segundo, #tercero,
-#cuarto, #quinto, #sexto {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 3%;
-}
-
-#tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.tarjeta {
-    flex: 1 1 250px;
-}
-
-#contenidoT, #contenidoQ, #contenidoS {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
+/*
 #izquierda, #derecha,
 #demo, #guias,
 .formulario, #navega {
-    flex: 1 1 300px;
     min-width: 0;
 }
+*/
 
-#alertas, #grupo1, #grupo2, #tarCo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#verde, #amarillo, #roja {
-    flex: 1 1 180px;
-}
 
 input, textarea, select {
     width: 100%;
